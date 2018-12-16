@@ -162,21 +162,36 @@
                 <p>
                 If you zoom the map above, you'll discover 718 named arches in the U.S. Board on Geographic Names. A cluster of arches exists in eastern Kentucky, but most arches exist in the west. The average elevation for an arch is 3,947 feet above sea level. The five most common names for an arch are 'Natural Arch', 'Natural Bridge', 'Window Rock', 'Arch Rock', and 'The Arch.'</a>)
                 </p>
-                <h3>Tools used in this project</h3>
-                <ul>
-                    <li>ArcGIS Pro was used to process lidar data and produce elevation derivatives.</li>
-                    <li>Data is shown on Mapbox web map with geolocation services enabled. </li>
-                    
-                </ul>
-
+                <h3>Print map for this location</h3>
+                <img src="sg_72.jpg" alt="Cliffs 40ft" width="100%">
+                <a href="sg_300.jpg/">Cliffs over 40-feet high around Star Gap Arch</a>
 
                 <hr>
-                <h3>Project assets</h3>
-                <ul>
-                    <li>Add link to geojson</li>
-                    <!-- <li><a href="arches_us.geojson" download>point locations GeoJSON</a></li>-->
-                </ul>
+                <h3>Data sources and methods</h3>
+                <p>
+                The primary sources of data for map and video creation include:
                 </p>
+                <ul>
+                    <li>Lidar point cloud data from the KyFromAbove</li>
+                    <li>2016 NAIP aerial color photography from USGS EarthExplorer</li>
+                    <li>GNIS Database of places names from the U.S. Board on Geographic Names</li>
+                </ul>
+                <p>
+                The lidar data was processed in ArcGIS Pro to produce a bare-earth DEM. Focal statistic function was used on this DEM to estimate cliff heights and to help produce elevation contours. For the 3D animation, a lidar point cloud was colorized by the aerial image, filtered to include above-ground points, and added to a scene for animation. Python was used to help with data processing and analysis.
+                </p>
+                <p>
+                This project is part of the Department of Geography, University of Kentucky course GEO 409, Fall 2018.
+                </p>
+                
+                <img src="ky_state_hillshade.jpg" alt="Arch Location" width="100%">
+                <p>
+                Location in Kentucky
+                </p>
+                
+                <p>
+                3D digitally rendered flyover of Star Gap Arch in ArcPRO using LiDAR data.
+                </p>
+                <a href="https://www.youtube.com/watch?v=nRAq8fHAQS4&feature=youtu.be">3D Star Gap Arch</a>
 
 
             </div>
